@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DialogFragment</string>
+    <string name="dialog_prompt">提示</string>
+    <string name="prompt">提示内容</string>
+    <string name="dialog_known">知道了</string>
+
+</resources>

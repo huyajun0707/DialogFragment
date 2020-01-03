@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DialogFragmentLibrary</string>
+    <string name="file_ttf">fonts/%s.ttf</string>
+</resources>
