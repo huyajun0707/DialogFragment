@@ -1,0 +1,6 @@
+/build/kotlin/
+/app/build/
+/PromptDialogLib/build/
+/upgradelib/build/
+.gradle/
+local.properties
