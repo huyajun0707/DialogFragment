@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Rayhahah:EasyHttp:1.1.2@aar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../Gradle/gradle-6.6.1/caches/transforms-2/files-2.1/2b285d9bb493c60c4848731b16503f1a/EasyHttp-1.1.2/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Gradle/gradle-6.6.1/caches/transforms-2/files-2.1/2b285d9bb493c60c4848731b16503f1a/EasyHttp-1.1.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Gradle/gradle-6.6.1/caches/transforms-2/files-2.1/2b285d9bb493c60c4848731b16503f1a/EasyHttp-1.1.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../Gradle/gradle-6.6.1/caches/modules-2/files-2.1/com.github.Rayhahah/EasyHttp/1.1.2/1ca242eb0666de653519ff4645171e3f2a6696f5/EasyHttp-1.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Gradle/gradle-6.6.1/caches/modules-2/files-2.1/com.github.Rayhahah/EasyHttp/1.1.2/20cd5011a9b780837a02ff83d3ef4e0f399a05d1/EasyHttp-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

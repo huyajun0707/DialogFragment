@@ -1,2 +1,4 @@
+include ':PromptDialogLib'
+include ':upgradelib'
 include ':app', ':dialogfragmentlibrary'
 rootProject.name='DialogFragment'

@@ -1,0 +1,4 @@
+<resources>
+    <string name="file_ttf">fonts/%s.ttf</string>
+
+</resources>
