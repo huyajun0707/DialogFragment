@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/PromptDialogLib/PromptDialogLib.iml" filepath="$PROJECT_DIR$/.idea/modules/PromptDialogLib/PromptDialogLib.iml" group="DialogFragment/PromptDialogLib" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="DialogFragment/app" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/dialogfragmentlibrary/dialogfragmentlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/dialogfragmentlibrary/dialogfragmentlibrary.iml" group="DialogFragment/dialogfragmentlibrary" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib_download/lib_download.iml" filepath="$PROJECT_DIR$/.idea/modules/lib_download/lib_download.iml" group="DialogFragment/lib_download" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/upgradelib/upgradelib.iml" filepath="$PROJECT_DIR$/.idea/modules/upgradelib/upgradelib.iml" group="DialogFragment/upgradelib" />
     </modules>
   </component>

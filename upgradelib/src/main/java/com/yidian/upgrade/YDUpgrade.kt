@@ -1,7 +1,7 @@
 package com.yidian.upgrade
 
 import androidx.appcompat.app.AppCompatActivity
-import com.yidian.promptdialoglib.PromptDialogFragment
+import com.yidian.promptdialoglib.PromptDialog
 import com.yidian.promptdialoglib.listener.OnDialogNegativeListener
 import com.yidian.promptdialoglib.listener.OnDialogPositiveListener
 import com.yidian.upgrade.listener.CheckUpgradeListner
@@ -21,7 +21,7 @@ import com.yidian.upgrade.view.DownloadDialog
 
 class YDUpgrade(upgradeapp: UpgradeApp) : OnDialogPositiveListener, OnDialogNegativeListener,
     OnDownloadListener {
-    private var downloadDialog: PromptDialogFragment? = null
+    private var downloadDialog: PromptDialog? = null
     private var upgradeInfo: UpgradeInfo? = null
     private var status = 0;
     private var DOWNLOAD_STATUS_DEFAULT = 0;
@@ -46,7 +46,7 @@ class YDUpgrade(upgradeapp: UpgradeApp) : OnDialogPositiveListener, OnDialogNega
                             .setRequestCode(2)
                         if (upgradeInfo?.isMandatory!!) {
                             //强制升级
-                            downloadDialog?.setCenter("立即更新")
+                            downloadDialog?.setPositive("立即更新")
                         } else {
                             downloadDialog?.setNegative("稍后提醒")
                                 ?.setPositive("立即更新")
@@ -91,12 +91,12 @@ class YDUpgrade(upgradeapp: UpgradeApp) : OnDialogPositiveListener, OnDialogNega
 
     override fun onDownloadFailed() {
         status = DOWNLOAD_STATUS_FAILED
-        downloadDialog?.setCenter("下载失败，重试")
+        downloadDialog?.setPositive("下载失败，重试")
     }
 
     override fun onDownloadSuccess() {
         status = DOWNLOAD_STATUS_SUCCESS
-        downloadDialog?.setCenter("安装")
+        downloadDialog?.setPositive("安装")
     }
 
 }

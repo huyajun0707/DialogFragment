@@ -36,4 +36,5 @@ dependencies {
 //    implementation project(path: ':dialogfragmentlibrary')
 
     implementation project(path: ':upgradelib')
+    implementation project(path: ':PromptDialogLib')
 }

@@ -2,13 +2,11 @@ package com.example.dialogfragment
 
 import android.os.Build
 import android.os.Bundle
-import android.os.Environment
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.yidian.upgrade.UpgradeApp
-import com.yidian.upgrade.YDUpgrade
+import com.yidian.promptdialoglib.Orientation
+import com.yidian.promptdialoglib.PromptDialog
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlin.apply as apply1
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,6 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btTest.setOnClickListener(View.OnClickListener { showCustom() })
+        println("---->bran:${Build.BRAND}")
+
     }
 
 
@@ -42,25 +42,41 @@ class MainActivity : AppCompatActivity() {
 //            .setCancelableOnTouchOutside(false)
 //            .setOnKeyListener(true)
 //            .showAllowingStateLoss(this)
+        PromptDialog.create(supportFragmentManager)
+            .setTitle("标题")
+            .setSubTitle("小标题")
+            .setContent("内容内容内容内容内容内容内容内容内容内容内容")
+            .setOrientationr(Orientation.VERTICAL)
+            .setPositive("立即更新")
+            .setNegative("取消")
+
+            .setWidthRatio(0.8f)
+            .setHightRatio(0.5f)
+            .setRequestCode(10)
+            .show(this)
+
     }
 
     fun showCustom() {
 
-        var upgrade = YDUpgrade(UpgradeApp {
-            context = this@MainActivity
-            host = "http://open-platform.test.yidian-inc.com/open-platform/get-update-package"
-//            var fileName: String = "/test.apk"
-//            var filePath: String? =
-//                Environment.getExternalStoragePublicDirectory("YiDian").path + this.fileName
-            appId = "com.example.upgrade"
-            appVersion = "1"
-            systemVersion = "10.0"
-            platform = "android"
-            deviceId = ""
-            deviceBrand = Build.BRAND
-            androidChannel = "yd"
-        })
-        upgrade.checkUpgrade()
+        showPromptDialog()
+
+
+//        var upgrade = YDUpgrade(UpgradeApp {
+//            context = this@MainActivity
+//            host = "http://open-platform.test.yidian-inc.com/open-platform/get-update-package"
+////            var fileName: String = "/test.apk"
+////            var filePath: String? =
+////                Environment.getExternalStoragePublicDirectory("YiDian").path + this.fileName
+//            appId = "com.example.upgrade"
+//            appVersion = "1"
+//            systemVersion = "10.0"
+//            platform = "android"
+//            deviceId = ""
+//            deviceBrand = Build.BRAND
+//            androidChannel = "yd"
+//        })
+//        upgrade.checkUpgrade()
 
 //       VoiceInteractor.Prompt.create(supportFragmentManager).setTitle("发现新版本")
 //            .setSubTitle("V1.0.1")
